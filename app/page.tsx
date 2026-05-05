@@ -36,7 +36,7 @@ export default function Home() {
   }
 
   const whatsappNumber = "56959369384"
-  const whatsappMessage = "Hola Agencia IA Pro, vi tu web y quiero evaluar y automatizar las citas de mi: Clínica/Consultorio/Despacho/Local"
+  const whatsappMessage = "Hola Agencia IA Pro, vi tu web y quiero mi Evaluación Gratuita para automatizar mi: (Centro / Estudio / Negocio)"
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   return (
@@ -71,8 +71,8 @@ export default function Home() {
         {mobileMenuOpen && (
           <nav className="md:hidden bg-background border-t border-border py-4">
             <div className="container mx-auto px-4 flex flex-col gap-4">
-              <button onClick={() => scrollToSection('servicios')} className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left">Servicios</button>
-              <button onClick={() => scrollToSection('beneficios')} className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left">Beneficios</button>
+              <button onClick={() => scrollToSection('servicios')} className="text-muted-foreground hover:text-foreground transition-colors py-12 text-left">Servicios</button>
+              <button onClick={() => scrollToSection('beneficios')} className="text-muted-foreground hover:text-foreground transition-colors py-12 text-left">Beneficios</button>
               <button onClick={() => scrollToSection('contacto')} className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left">Contacto</button>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <Button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white w-full">
@@ -85,12 +85,12 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
+      <section className="pt-24 pb-12 md:pt-32 md:pb-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-50 via-fuchsia-50 to-cyan-50 dark:from-violet-950/30 dark:via-fuchsia-950/30 dark:to-cyan-950/30 -z-10" />
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-violet-100 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Zap className="h-4 w-4" /> Automatizacion para Profesionales, Instituciones y Negocios
+              <Zap className="h-4 w-4" /> Automatización para Profesionales, Instituciones y Negocios
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Automatizamos Citas con{' '}
@@ -99,19 +99,19 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Mas citas. Mas clientes. Mas resultados para tu clinica dental, centro de salud o consultorio. Atencion 24/7 sin perder ninguna oportunidad.
+              Más citas. Más clientes. Más resultados para tu centro de salud, estudio profesional, salón o complejo deportivo. Atención 24/7 sin perder ninguna oportunidad.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white text-lg px-8 py-6">
-                  <MessageSquare className="mr-2 h-5 w-5" /> Agenda tu Evaluacion Gratuita
+                  <MessageSquare className="mr-2 h-5 w-5" /> Agenda tu Evaluación Gratuita
                 </Button>
               </a>
               <Button size="lg" variant="outline" onClick={() => scrollToSection('servicios')} className="text-lg px-8 py-6">
                 Ver Servicios <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-8 border-t border-border/50">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 pt-8 border-t border-border/50">
               <div className="text-center"><div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">+40%</div><div className="text-muted-foreground text-sm mt-1">Mas Citas Agendadas</div></div>
               <div className="text-center"><div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-fuchsia-600 to-cyan-600 bg-clip-text text-transparent">24/7</div><div className="text-muted-foreground text-sm mt-1">Atencion Automatica</div></div>
               <div className="text-center"><div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-600 to-violet-600 bg-clip-text text-transparent">90s</div><div className="text-muted-foreground text-sm mt-1">Respuesta Promedio</div></div>
@@ -122,26 +122,26 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="servicios" className="py-16 md:py-24 bg-muted/30">
+      <section id="servicios" className="py-8 md:pt-4 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Nuestros Servicios</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Soluciones disenadas para clinicas, centros de salud y profesionales</p>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Soluciones diseñadas para centros de salud, estudios profesionales y negocios de servicios.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-violet-500/50 overflow-hidden relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-600 to-fuchsia-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <CardHeader className="pb-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center mb-4"><Calendar className="h-7 w-7 text-white" /></div>
-                <CardTitle className="text-2xl">Agendamiento + Recordatorios Automaticos</CardTitle>
-                <CardDescription className="text-base">Tus pacientes nunca mas olvidaran su cita. Reprogramacion inteligente segun tu disponibilidad.</CardDescription>
+                <CardTitle className="text-2xl">Agendamiento + Recordatorios Automáticos</CardTitle>
+                <CardDescription className="text-base">Tus citas nunca más se perderán: nadie volverá a faltar. Reprogramación inteligente según tu disponibilidad.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-violet-500 mt-0.5 flex-shrink-0" /><span><strong>Recordatorio 24h antes</strong> - Confirmacion inicial</span></li>
                   <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-violet-500 mt-0.5 flex-shrink-0" /><span><strong>Recordatorio 3h antes</strong> - Ultima confirmacion</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-violet-500 mt-0.5 flex-shrink-0" /><span><strong>Reprogramacion inteligente</strong> - El sistema busca nuevos horarios segun tu disponibilidad</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-violet-500 mt-0.5 flex-shrink-0" /><span>Confirmacion/Cancelacion con un clic</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-violet-500 mt-0.5 flex-shrink-0" /><span><strong>Reprogramación inteligente</strong> - El sistema busca nuevos horarios segun tu disponibilidad</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-violet-500 mt-0.5 flex-shrink-0" /><span>Confirmación/Cancelación con un clic</span></li>
                 </ul>
               </CardContent>
             </Card>
@@ -149,15 +149,15 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-fuchsia-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <CardHeader className="pb-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-fuchsia-500 to-cyan-500 flex items-center justify-center mb-4"><Bot className="h-7 w-7 text-white" /></div>
-                <CardTitle className="text-2xl">Chatbot Inteligente para WhatsApp</CardTitle>
-                <CardDescription className="text-base">Responde preguntas frecuentes, califica pacientes y deriva automaticamente.</CardDescription>
+                <CardTitle className="text-2xl">Asistente Virtual Especializado para WhatsApp.</CardTitle>
+                <CardDescription className="text-base">Responde consultas, califica interesados y deriva automáticamente.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Respuestas instantaneas 24/7</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Informacion de servicios y precios</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Calificacion de urgencias</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Derivacion a humano cuando se necesita</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Información de servicios y precios</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Calificación de urgencias</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-fuchsia-500 mt-0.5 flex-shrink-0" /><span>Derivación a humano cuando se necesita</span></li>
                 </ul>
               </CardContent>
             </Card>
@@ -165,15 +165,15 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <CardHeader className="pb-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-4"><Users className="h-7 w-7 text-white" /></div>
-                <CardTitle className="text-2xl">Seguimiento de Pacientes</CardTitle>
+                <CardTitle className="text-2xl">Seguimiento de Clientes Post-Atención</CardTitle>
                 <CardDescription className="text-base">Manten el contacto automatico post-consulta y aumenta la fidelizacion.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Encuestas de satisfaccion automaticas</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Encuestas de satisfacción automáticas</span></li>
                   <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Recordatorios de controles</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Campanas de reactivacion</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Programas de fidelizacion</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Recordatorios personalizados para su próxima sesión.</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" /><span>Programas de fidelización</span></li>
                 </ul>
               </CardContent>
             </Card>
@@ -181,15 +181,15 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <CardHeader className="pb-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center mb-4"><Navigation className="h-7 w-7 text-white" /></div>
-                <CardTitle className="text-2xl">Asistencia de Ubicacion Inteligente</CardTitle>
-                <CardDescription className="text-base">Ayuda a tus pacientes a llegar sin problemas. Informacion completa de como llegar a tu consulta.</CardDescription>
+                <CardTitle className="text-2xl">Asistencia de Ubicación Inteligente</CardTitle>
+                <CardDescription className="text-base">Ayuda a tus clientes a llegar sin problemas. Información completa de como llegar a tu consulta u oficina o local.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" /><span>Mapa de Google Maps integrado</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" /><span>Rutas de locomocion colectiva cercanas</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" /><span>Rutas de locomoción colectiva cercanas</span></li>
                   <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" /><span>Estacionamientos disponibles</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" /><span>Instrucciones paso a paso automaticas</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" /><span>Instrucciones paso a paso automáticas</span></li>
                 </ul>
               </CardContent>
             </Card>
@@ -197,8 +197,8 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <CardHeader className="pb-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center mb-4"><Stethoscope className="h-7 w-7 text-white" /></div>
-                <CardTitle className="text-2xl">Integracion con tu Software</CardTitle>
-                <CardDescription className="text-base">Conectamos con tu sistema actual de gestion clinica.</CardDescription>
+                <CardTitle className="text-2xl">Integración con tu Software</CardTitle>
+                <CardDescription className="text-base">Integración total con tus sistemas de gestión actuales.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
@@ -214,48 +214,48 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section id="beneficios" className="py-16 md:py-24">
+      <section id="beneficios" className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Por que elegirnos?</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Beneficios reales para tu clinica o consultorio</p>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Resultados tangibles para tu centro o estudio profesional. Optimizamos tu tiempo y la experiencia de tus clientes.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-violet-100 dark:bg-violet-900/50 flex items-center justify-center mx-auto mb-4"><Clock className="h-6 w-6 text-violet-600" /></div>
               <h3 className="font-semibold text-lg mb-2">Ahorra 20+ Horas/Semana</h3>
-              <p className="text-muted-foreground text-sm">Tu recepcionista se libera de llamadas repetitivas y se enfoca en atender pacientes presenciales.</p>
+              <p className="text-muted-foreground text-sm">Tu recepcionista, o tú, se liberan de llamadas repetitivas y se enfoca en atender clientes presenciales.</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-fuchsia-100 dark:bg-fuchsia-900/50 flex items-center justify-center mx-auto mb-4"><TrendingUp className="h-6 w-6 text-fuchsia-600" /></div>
-              <h3 className="font-semibold text-lg mb-2">Mas Citas, Menos Ausentismo</h3>
-              <p className="text-muted-foreground text-sm">Recordatorios automaticos reducen las inasistencias hasta en 70%.</p>
+              <h3 className="font-semibold text-lg mb-2">Más Citas, Menos Ausentismo</h3>
+              <p className="text-muted-foreground text-sm">Recordatorios automáticos reducen las inasistencias hasta en 70%.</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center mx-auto mb-4"><Calendar className="h-6 w-6 text-amber-600" /></div>
               <h3 className="font-semibold text-lg mb-2">Recordatorios Inteligentes</h3>
-              <p className="text-muted-foreground text-sm">Doble recordatorio (24h y 3h antes) + reprogramacion automatica segun tu agenda.</p>
+              <p className="text-muted-foreground text-sm">Doble recordatorio (24h y 3h antes) + reprogramación automática segun tu agenda.</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center mx-auto mb-4"><Shield className="h-6 w-6 text-cyan-600" /></div>
-              <h3 className="font-semibold text-lg mb-2">Atencion Sin Errores</h3>
+              <h3 className="font-semibold text-lg mb-2">Atención Sin Errores</h3>
               <p className="text-muted-foreground text-sm">Sin confusiones de horarios ni dobles reservas. Todo automatizado y preciso.</p>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center mx-auto mb-4"><MessageSquare className="h-6 w-6 text-emerald-600" /></div>
               <h3 className="font-semibold text-lg mb-2">Soporte Personalizado</h3>
-              <p className="text-muted-foreground text-sm">Te acompanamos en la implementacion y estamos siempre disponibles.</p>
+              <p className="text-muted-foreground text-sm">Te acompanamos en la implementación y estamos siempre disponibles.</p>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="py-16 md:py-24 bg-muted/30">
+      <section id="contacto" className="py-8 md:py-10 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">Diagnostico y Analisis gratuito de tu gestion de clientes</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">Diagnostico y Análisis gratuito de tu gestión de clientes</h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">15 minutos son suficientes para mostrarte como automatizar tu Negocio</p>
             </div>
             <div className="grid lg:grid-cols-5 gap-8">
@@ -316,7 +316,7 @@ export default function Home() {
                 <span className="text-yellow-500">—</span>
               </p>
               <p className="font-serif text-gray-400 text-base">
-                Especialistas en clinicas dentales, centros de salud y Profesionales Independientes.
+                Especialistas en centros médicos, firmas legales y profesionales de alta demanda.
               </p>
             </div>
             <div className="border rounded-lg p-6 bg-card">
@@ -334,6 +334,7 @@ export default function Home() {
                 <li>agenciaiapro.cl@gmail.com</li>
                 <li>+56 9 5936 9384</li>
                 <li>Chile</li>
+                <li>www.agenciaiapro.cl</li>
               </ul>
             </div>
           </div>
